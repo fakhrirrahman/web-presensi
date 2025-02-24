@@ -17,7 +17,7 @@ Route::get('/services', function () {
 Route::get('/pricing', function () {
     return view('pricing');
 })->name('pricing');
-Route::get('/attendance', function () {
+Route::get('/presensi', function () {
     return view('attendance');
 })->name('attendance');
 

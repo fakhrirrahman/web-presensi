@@ -18,7 +18,8 @@
                         class="{{ request()->is('portfolio') ? 'active' : '' }}">Portfolio</a></li> --}}
                 <li><a href="{{ url('/pricing') }}" class="{{ request()->is('pricing') ? 'active' : '' }}">Pricing</a>
                 </li>
-                <li><a href="{{ url('/presensi') }}" class="{{ request()->is('blog') ? 'active' : '' }}">presensi</a>
+                <li><a href="{{ url('/presensi') }}"
+                        class="{{ request()->is('presensi') ? 'active' : '' }}">presensi</a>
                 </li>
 
                 <li><a href="{{ url('/contact') }}" class="{{ request()->is('contact') ? 'active' : '' }}">Contact</a>
