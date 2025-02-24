@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\AttendanceController;
 
 Route::get('/', function () {
     return view('index');
@@ -16,6 +17,11 @@ Route::get('/services', function () {
 Route::get('/pricing', function () {
     return view('pricing');
 })->name('pricing');
+Route::get('/attendance', function () {
+    return view('attendance');
+})->name('attendance');
 
 Route::get('/contact', [ContactController::class, 'showForm'])->name('contact');
 Route::post('/contact/submit', [ContactController::class, 'submitForm'])->name('contact.submit');
+
+Route::post('/attedance/submit', [AttendanceController::class, 'store'])->name('attendance.store');
